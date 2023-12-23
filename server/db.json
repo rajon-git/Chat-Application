@@ -41,6 +41,12 @@
       "password": "$2a$10$8FRRMgE8RwN3MjKPyI71KeZuLG83kzvKA7PcZPMlFG2PADK/rpTsG",
       "name": "Rajon",
       "id": 7
+    },
+    {
+      "email": "zhsust15@gmail.com",
+      "password": "$2a$10$RLkAfa5YFaq5lcy1doHrw.qNbvrSZkRrW5jJ5cV3nwakqxkZpZfia",
+      "name": "Rajon",
+      "id": 8
     }
   ],
   "conversations": [
