@@ -55,7 +55,7 @@
       "participants": "zhsust15@gmail.com",
       "users": [
         {
-          "email": "sumit@learnwithsumit.com",
+          "email": "zhsust15@gmail.com",
           "name": "Sumit Saha",
           "id": 1
         },
@@ -70,10 +70,10 @@
     },
     {
       "id": 2,
-      "participants": "sumit@learnwithsumit.com-saad@learnwithsumit.com",
+      "participants": "zhsust15@gmail.com-saad@learnwithsumit.com",
       "users": [
         {
-          "email": "sumit@learnwithsumit.com",
+          "email": "zhsust15@gmail.com",
           "name": "Sumit Saha",
           "id": 1
         },
@@ -113,7 +113,7 @@
         "id": 2
       },
       "receiver": {
-        "email": "sumit@learnwithsumit.com",
+        "email": "zhsust15@gmail.com",
         "name": "Sumit Saha",
         "id": 1
       },
