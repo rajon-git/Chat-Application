@@ -1,15 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import isValidEmail from "../../utils/isValidEmail"
 import { useGetUserQuery } from "../../features/users/usersApi";
 import Error from "../ui/Error"
+import { useSelector } from "react-redux";
 
 export default function Modal({ open, control }) {
     const [to,setTo]=useState('');
     const [message,setMessage]=useState('');
     const [userCheck, setUserCheck] = useState(false);
-    const {data: participant, isLoading, error} = useGetUserQuery(to, {
+
+    const {user: loggedInUser}= useSelector(state => state.auth) || {};
+    const {email: myEmail} = loggedInUser || {};
+
+    const {data: participant} = useGetUserQuery(to, {
         skip: !userCheck,
     });
+
+    useEffect(()=>{
+        if(participant?.length>0)
+        {}
+    },[participant])
 
     const debounceHandler =(fn, delay)=>{
         let timeoutId;
@@ -89,6 +99,7 @@ export default function Modal({ open, control }) {
                         </div>
 
                         {participant?.length === 0 && (<Error message="There user doesn't exist" />)}
+                        {participant?.length > 0 && participant[0].email === myEmail && (<Error message="You cant send message to yourself!" />)}
                     </form>
                 </div>
             </>
