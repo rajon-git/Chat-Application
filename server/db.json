@@ -47,6 +47,12 @@
       "password": "$2a$10$RLkAfa5YFaq5lcy1doHrw.qNbvrSZkRrW5jJ5cV3nwakqxkZpZfia",
       "name": "Rajon",
       "id": 8
+    },
+    {
+      "email": "saad@gmail.com",
+      "password": "$2a$10$Qe2nKYrdFOD1BODWp/cLa.v4XKdBllkDuWJfHdBwchLA54byj2HRC",
+      "name": "Saad hasan",
+      "id": 9
     }
   ],
   "conversations": [
@@ -85,6 +91,25 @@
       ],
       "message": "How are you?",
       "timestamp": 1661976143678
+    },
+    {
+      "participants": "saad@gmail.com-zhsust15@gmail.com",
+      "users": [
+        {
+          "email": "saad@gmail.com",
+          "name": "Saad hasan",
+          "id": 9
+        },
+        {
+          "email": "zhsust15@gmail.com",
+          "password": "$2a$10$RLkAfa5YFaq5lcy1doHrw.qNbvrSZkRrW5jJ5cV3nwakqxkZpZfia",
+          "name": "Rajon",
+          "id": 8
+        }
+      ],
+      "message": "hi",
+      "timestamp": 1703742529644,
+      "id": 3
     }
   ],
   "messages": [

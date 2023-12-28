@@ -11,18 +11,18 @@ export const conversationsApi = apiSlice.injectEndpoints({
                 `/conversations?participants_like=${userEmail}-${participantEmail}&&participants_like=${participantEmail}-${userEmail}`,
         }),
         addConversation: builder.mutation({
-            query: (data) =>({
-                url: '/conersations',
-                method: 'POST',
-                body: data
-            }) 
+            query: (data) => ({
+                url: "/conversations",
+                method: "POST",
+                body: data,
+            }),
         }),
         editConversation: builder.mutation({
-            query: ({id,data}) =>({
-                url: '/conersations/${id}',
-                method: 'PATCH',
-                body: data
-            }) 
+            query: ({ id, data }) => ({
+                url: `/conversations/${id}`,
+                method: "PATCH",
+                body: data,
+            }),
         }),
     }),
 });
